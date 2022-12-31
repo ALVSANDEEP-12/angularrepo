@@ -1,80 +1,34 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-    
-    
-    <div style="background-color: yellow;height: 250px;">
-           <div style="text-align: center;">
-            <marquee onmouseover="stop()" onmouseout="start()" style="background-color: aquamarine;">   <h1>Hi Login Page </h1></marquee>
-               <h3>
-                <form>
-                   
-<div class="container">
-      <div class="form-inline">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-      </div>
-      <div class="form-inline">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="remember"> Remember me</label>
-      </div>
-      <button type="submit" class="btn btn-success">Submit</button>
-      <button type="submit" class="btn btn-danger">RESET</button>
-  
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Webpro</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Department<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">cse</a></li>
+          <li><a href="#">ece</a></li>
+          <li><a href="#">mech</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="galary">Gallery</a></li>
+      <li><a routerLink="binding">Binding</a></li>
+      <li><a routerLink="directive">Directive</a></li>
+      <li><a routerLink="forms">Forms</a></li>
+      <li><a routerLink="reactiveforms">Reactive Forms</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a routerLink="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
   </div>
-                </form>
-               </h3>
-           </div>
+</nav>
 
-    </div>
+<router-outlet></router-outlet>
 
-    <div style="background-color: red;height: 500px;">
-          <div style="text-align: center;">
-            <h1> Hi Regitser Page </h1>
-            <h3>
-               <form>
-               
-                Name  : <input type="text" name="" id=""><br> 
-                pass : <input type="password"><br>
-                PHone : <input type="number"><br>
-                Email : <input type="email"><br>
-                DOB : <input type="date"><br>
-                
-                Gender: 
-                <input type="radio" name="n1">: MALE 
-                <input type="radio" name="n1">: FEMALE 
-                <input type="radio" name="n1">: Others
-                <br>
-                Subject : 
-                    <input type="checkbox" checked>: JAVA
-                    <input type="checkbox">: C PP 
-                    <input type="checkbox">: Python
-                    <input type="checkbox">: MEAN 
-                    <input type="checkbox">: MERN 
-                <br>
-                Address : <textarea>
+<!-- <img src="../assets/cloud.jpg" height="50%" width="50%"> -->
 
-                </textarea><br>
-                Resume : <input type="file"> <br>
-                Color : <input type="color">
-               <br><br><input type="submit" value="REGISTER">
-               <input type="reset">
-               </form>
-            </h3>
-          </div>
-
-    </div>
-</body>
-</html>
+  <!-- <app-galary></app-galary>
+  <app-login></app-login>
+  <app-signup></app-signup> -->

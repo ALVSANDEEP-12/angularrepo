@@ -1,0 +1,65 @@
+<div style="text-align: center;">
+<h1 style="color: darksalmon;">This is Data Binding</h1>
+<!-- we using template reference like #username #age -->
+Name:<input type="text" #username>
+<input type="submit" value="CLICK" (click)="abc(username.value)">
+<br>
+{{myname}}
+<!-- <br>{{myname}}<br>
+     {{year}} -->
+
+</div>
+
+<!-- <div style="text-align: center;">
+    <h1 style="color: darksalmon;">Calculation using Binding Concept</h1>
+    <!-- we using template reference like #username #age -->
+    <!-- Principal:<input type="text" #p> <br/>
+    Time:<input type="text" #t><br/>
+    ROI:<input type="text" #r><br/>
+    Total:<input type="text" value="{{total}}"><br/>
+    EMI:<input type="text" value="{{emi}}"><br/>
+    <input type="submit" value="CALCULATE" (click)="cal(p.value,t.value,r.value)"> -->
+    <!-- <br>
+    </div> --> 
+
+
+    <!-- <div style="text-align: center;">
+        <h1 style="color: darksalmon;">Calculation using Binding Concept</h1>
+        Principal:<input type="text" #p> <br/>
+        Time:<input type="text" #t><br/>
+        <!-- ROI:<input type="text" #r><br/> -->
+        <!-- <select (change)="roi($event)">
+            <option>Loan Type</option>
+            <option value="car">Car</option>
+            <option value="home">Home</option>
+            <option value="Edu">Edu</option>
+            <option value="personal">Personal</option>
+        </select><br>
+        ROI:<input type="text" disabled value="{{intrest}}"><br/>
+        Total:<input type="text" value="{{total}}"><br/>
+        EMI:<input type="text" value="{{emi}}"><br/>
+        <input type="submit" value="CALCULATE" (click)="cal(p.value,t.value)"> --> -->
+        <!-- <br>
+        </div> -->
+
+
+        <div style="text-align: center;">
+    <h1 style="color: darksalmon;">Calculation using Binding Concept</h1>
+    <!-- we using template reference like #username #age -->
+    English:<input type="number" #e> <br/>
+    Hindi:<input type="number" #h><br/>
+    Maths:<input type="number" #m><br/>
+    Science:<input type="number" #sc><br/>
+    Socal Studies:<input type="number" #ss><br/>
+    Total:<input type="number" disabled value="{{total}}"><br/>
+    Percentage:<input type="text" disabled value="{{percentage}}"><br/>
+    Rank:<input type="text" disabled value="{{rank}}">
+    <!-- EMI:<input type="text" value="{{emi}}"><br/> -->
+    <input type="submit" value="CALCULATE" (click)="cal(e.value,h.value,m.value,sc.value,ss.value)">
+     <br>
+    </div> 
+        
+
+
+
+

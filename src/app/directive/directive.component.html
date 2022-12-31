@@ -1,0 +1,12 @@
+<div style="text-align: left;">
+<ul *ngFor="let items of arr">
+<li>{{items}}</li>
+</ul>
+<br>
+
+<input type="text" #fru>
+<input type="button" value="AddFruit" (click)="addFruit(fru.value)">
+<ul *ngFor="let items of fruits">
+    <li>{{items}}</li>
+    </ul>
+</div>
