@@ -1,0 +1,19 @@
+ <input type="submit" value="click" (click)="A4comp()"> 
+
+<table class="table">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Branch</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+
+   <tr *ngFor="let emp of myemp">
+     <td>{{emp.Id}}</td>
+     <td>{{emp.Name}}</td>
+     <td>{{emp.Branch}}</td>
+     <td>{{emp.Age}}</td>
+     <td>{{emp.Gender}}</td>
+   </tr> 
+</table>

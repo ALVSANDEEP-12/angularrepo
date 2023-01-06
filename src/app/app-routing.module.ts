@@ -6,7 +6,9 @@ import { FormsComponent } from './forms/forms.component';
 import { GalaryComponent } from './galary/galary.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { PipeComponent } from './pipe/pipe.component';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
+import { ServcompdemoComponent } from './servcompdemo/servcompdemo.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -41,6 +43,14 @@ const routes: Routes = [
 {
   path:'reactiveforms',
   component:ReactiveformsComponent
+},
+{
+  path:'pipe',
+  component:PipeComponent
+},
+{
+  path:'servcompdemo',
+  component:ServcompdemoComponent
 }
 
 
